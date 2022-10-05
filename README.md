@@ -1,1 +1,22 @@
 # Docker
+
+Within Git bash, first launch the vagrantfile and then do the below commands to launch a container.
+
+# Create directory
+mkdir compose
+cd compose/
+
+# docker-compose command
+docker-compose
+
+# Download docker-compos.yml file for vprofile project
+wget https://raw.githubusercontent.com/devopshydclub/vprofile-project/vp-docker/compose/docker-compose.yml
+ls
+vim docker-compose.yml
+
+# Bring up all the containers
+docker-compose up -d
+docker ps
+ip addr show
+
+# Go to browser and enter VMIP:80
